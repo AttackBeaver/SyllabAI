@@ -27,7 +27,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/yourusername/syllabai.git
+git clone https://github.com/AttackBeaver/SyllabAI
 cd syllabai
 ```
 
