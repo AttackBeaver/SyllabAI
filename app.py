@@ -92,11 +92,6 @@ if uploaded_file:
             key="plan_editor"
         )
 
-        # Обновляем session_state при редактировании пользователем (data_editor с key делает это автоматически?)
-        # В Streamlit при использовании st.data_editor с key, возвращаемый edited_df является ссылкой на данные,
-        # но изменения пользователя не сохраняются в session_state автоматически, если мы не присвоим.
-        # Чтобы сохранить ручные правки, присвоим session_state.plan_data = edited_df только если не было генерации.
-        # Для этого используем флаг, который устанавливается при генерации.
         if 'generation_done' not in st.session_state:
             st.session_state.generation_done = False
 
